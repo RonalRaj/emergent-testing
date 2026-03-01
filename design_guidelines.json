@@ -1,0 +1,161 @@
+{
+  "project_name": "WellnessTracker",
+  "design_philosophy": {
+    "theme": "Organic & Earthy",
+    "emotional_goal": "Calm, Motivating, Trusted, Clarity",
+    "core_concept": "Digital Detox Aesthetics - Technology that feels like nature"
+  },
+  "typography": {
+    "font_family_heading": "Manrope",
+    "font_family_body": "DM Sans",
+    "import_url": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Manrope:wght@300;400;600;800&display=swap",
+    "usage_rules": {
+      "headings": "Manrope, font-bold or font-extrabold for H1/H2. Use tight tracking (tracking-tight). Color: Deep Forest Green.",
+      "body": "DM Sans, font-normal. Relaxed line-height (leading-relaxed). Color: Dark Slate/Olive.",
+      "ui_elements": "Manrope, font-semibold (Buttons, Tabs, Labels).",
+      "numbers": "Manrope (it has tabular figures for dashboards)."
+    }
+  },
+  "colors": {
+    "palette_description": "A soft, organic palette inspired by nature. Avoid pure black and pure white.",
+    "css_variables": {
+      "light": {
+        "background": "40 20% 97%",
+        "foreground": "140 30% 15%",
+        "card": "0 0% 100%",
+        "card-foreground": "140 30% 15%",
+        "popover": "0 0% 100%",
+        "popover-foreground": "140 30% 15%",
+        "primary": "140 18% 36%",
+        "primary-foreground": "0 0% 100%",
+        "secondary": "30 25% 94%",
+        "secondary-foreground": "140 30% 15%",
+        "muted": "40 10% 94%",
+        "muted-foreground": "140 10% 45%",
+        "accent": "25 60% 85%",
+        "accent-foreground": "25 50% 30%",
+        "destructive": "0 70% 60%",
+        "destructive-foreground": "0 0% 98%",
+        "border": "40 10% 90%",
+        "input": "40 10% 90%",
+        "ring": "140 18% 36%",
+        "radius": "1rem"
+      },
+      "dark": {
+        "background": "140 20% 8%",
+        "foreground": "40 20% 94%",
+        "card": "140 20% 10%",
+        "card-foreground": "40 20% 94%",
+        "popover": "140 20% 10%",
+        "popover-foreground": "40 20% 94%",
+        "primary": "140 15% 50%",
+        "primary-foreground": "0 0% 100%",
+        "secondary": "140 15% 15%",
+        "secondary-foreground": "40 20% 94%",
+        "muted": "140 15% 15%",
+        "muted-foreground": "140 10% 60%",
+        "accent": "140 15% 20%",
+        "accent-foreground": "40 20% 94%",
+        "destructive": "0 60% 50%",
+        "destructive-foreground": "0 0% 98%",
+        "border": "140 15% 15%",
+        "input": "140 15% 15%",
+        "ring": "140 15% 50%"
+      }
+    },
+    "color_tokens": {
+      "sage-50": "#F4F7F4",
+      "sage-500": "#5A7D5A",
+      "sage-900": "#1A2F1C",
+      "clay-100": "#FAEBE6",
+      "clay-500": "#C27E68",
+      "oat-100": "#F9F9F7"
+    }
+  },
+  "layout": {
+    "spacing_system": "Use generous padding. Cards should have p-6 or p-8. Section gaps should be gap-8 or gap-12.",
+    "container_width": "max-w-7xl",
+    "grid_system": {
+      "dashboard": "Bento Grid: Mixed span sizes. 12-column grid. Key metric (e.g., Weight Goal) takes col-span-4 row-span-2. Smaller metrics take col-span-2.",
+      "landing_page": "Asymmetric Tetris Grid for features. Hero section full width with overlay."
+    },
+    "border_radius": {
+      "default": "rounded-2xl",
+      "card": "rounded-3xl",
+      "button": "rounded-full"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "Use subtle glass for sticky headers: bg-white/70 backdrop-blur-lg border-b border-white/20.",
+    "shadows": "Soft, diffuse shadows: shadow-[0_8px_30px_rgb(0,0,0,0.04)]. Avoid harsh black shadows.",
+    "gradients": "No linear gradients. Use radial gradients for backgrounds (e.g., a soft sun glow in the corner).",
+    "textures": "Add a subtle noise overlay (opacity 0.03) to the background to make it feel like paper.",
+    "micro_interactions": "Buttons scale down slightly on click (active:scale-95). Cards lift on hover (-translate-y-1)."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold shadow-lg shadow-primary/20",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full px-8 py-6"
+    },
+    "cards": {
+      "style": "bg-card text-card-foreground border border-border shadow-sm rounded-3xl p-6 transition-all duration-300 hover:shadow-md",
+      "content_padding": "p-6"
+    },
+    "charts": {
+      "library": "recharts",
+      "style": "Minimal axes. Use curved lines (monotone). Hide grid lines or make them very subtle dashed.",
+      "colors": ["#5A7D5A", "#C27E68", "#E6B89C", "#8FB3AD"]
+    },
+    "inputs": {
+      "style": "bg-transparent border-b-2 border-border focus:border-primary rounded-none px-0 transition-colors focus:outline-none"
+    }
+  },
+  "image_strategy": {
+    "source_tool": "image_selector_tool",
+    "style_guide": "Natural light, candid moments, connection with nature. Avoid staged studio shots.",
+    "image_urls": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1707257969667-68804d47f5da",
+        "alt": "Woman doing yoga in front of sun",
+        "position": "Hero Section Background or Side Visual"
+      },
+      "feature_nutrition": {
+        "url": "https://images.unsplash.com/photo-1670607231914-605c7b94edd0",
+        "alt": "Healthy fruit bowl",
+        "position": "Nutrition Tracking Feature Card"
+      },
+      "feature_exercise": {
+        "url": "https://images.unsplash.com/photo-1586919257548-66ec29b8c7ed",
+        "alt": "Man jogging in park",
+        "position": "Activity Tracking Feature Card"
+      }
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "entrance": "Staggered fade-up (y: 20 -> 0, opacity: 0 -> 1) for dashboard cards.",
+    "hover": "Scale 1.02 for cards. Icon rotation for buttons."
+  },
+  "accessibility": {
+    "focus_states": "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
+    "contrast": "Ensure text is Deep Forest Green on Sage backgrounds.",
+    "testing": "All interactive elements must have data-testid attributes."
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react', 'recharts', 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "Update tailwind.config.js to include the custom colors and font families.",
+    "Update index.css with the CSS variables provided.",
+    "Create a 'Layout' component that handles the sidebar/header structure.",
+    "Use the Bento Grid layout for the main Dashboard view.",
+    "Ensure the Landing Page uses the provided images in a visually striking way (e.g., full-height hero).",
+    "For the Login/Register pages, use a split layout: Image on one side, Form on the other."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects for headers.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Never use AI assistant Emoji characters."
+  ]
+}
